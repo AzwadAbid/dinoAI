@@ -21,7 +21,7 @@ with open ('../actions.csv', 'r') as f:
 
 all_images = []
 img_num = 0
-while img_num < 1567:
+while img_num < 838:
         img = cv2.imread(r'../images/frame_{0}.jpg'.format(img_num), cv2.IMREAD_GRAYSCALE)
         img = cv2.resize(img, (0,0), fx=0.5, fy=0.5)
         img = img[:, :, np.newaxis]
@@ -57,7 +57,7 @@ model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=['accur
 # tensorboard data callback
 tbCallBack = keras.callbacks.TensorBoard(log_dir='./Graph', histogram_freq=0, write_graph=True, write_images=True)
 
-model.fit(x_train, y_train, batch_size=250, epochs=60, validation_data=(x_test, y_test), callbacks=[tbCallBack])
+model.fit(x_train, y_train, batch_size=30, epochs=200, validation_data=(x_test, y_test), callbacks=[tbCallBack])
 
 # save weights post training
-model.save('dino_ai_weights_post_train_2.h5')
+model.save('dino_ai_weights_post_train.h5')
