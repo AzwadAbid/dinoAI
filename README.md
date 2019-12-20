@@ -13,12 +13,12 @@ https://sites.google.com/a/chromium.org/chromedriver/home
 
 ### Step 1 | capture_training_data.py
 
-Start game and capture training data, frame and respective action (do nothing, jump, duck). Writes these actions to actions.csv and frames to images folder.
+Start game and capture training data, frame and respective action (do nothing, jump, duck). Write these actions to actions.csv and frames to images folder.
 
 ### Step 2 | network.py
 
 Train CNN on captured data.
-I changed batch_size to 20 as my GPU cannot take very big batches. You can train with higher batches if you have a good GPU with larger memory size.
+I changed batch_size to 30 as my GPU cannot take very big batches. You can train with higher batches if you have a good GPU with larger memory size.
 
 ### Step 3 | play_game.py
 
