@@ -5,10 +5,11 @@ import threading
 from capture import capture_feed
 from network import ai_player
  
-driver = webdriver.Chrome('/Users/owner/Desktop/all/tools/chromedriver')
+driver = webdriver.Chrome("./chromedriver.exe")
 
 # internet connection must be off
-driver.get('http://www.google.com/')
+#driver.get('http://www.google.com/')
+driver.get('chrome://dino/')
 time.sleep(2)
 
 # main page to send key commands to
