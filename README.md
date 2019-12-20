@@ -1,7 +1,7 @@
 # dinoAI
 CNN trained to play Google's dinosaur run game.
 
-*This code is in desperate need of cleanup, will when I have time.*
+*The Code is cleaned up for use with Windows 10. Thanks to Fisher for writing the program*
 
 ## FILE DESCRIPTION
 
